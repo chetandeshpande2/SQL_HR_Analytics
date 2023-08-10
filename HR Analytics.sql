@@ -14,5 +14,11 @@ from employees;
 -- [6] Write a query to retrieve information about employees whose salaries exceed $20,000?
 select * from employees 
 where salary >20000;
-kjdbewkdboie
+-- [7] Write a query to retrieve information about employees who are one of the following: AD_PRES, AD_VP and AC_MGR.
+select * from jobs
+where job_id in ('AD_PRES', 'AD_VP','AC_MGR');
+-- [8] Write a query to fetch the details of the employees whose salaries are in the range of 10,000 to 15,000 and the hire date should be 1994-06-07.
+select * from employees
+where salary between 10000 and 15000 and hire_date = 1994-06-07;
+
 
